@@ -1,0 +1,7 @@
+D:\c#\HashTask\HashTask\obj\Debug\HashTask.csprojAssemblyReference.cache
+D:\c#\HashTask\HashTask\obj\Debug\HashTask.csproj.CoreCompileInputs.cache
+D:\c#\HashTask\HashTask\bin\Debug\HashTask.exe.config
+D:\c#\HashTask\HashTask\bin\Debug\HashTask.exe
+D:\c#\HashTask\HashTask\bin\Debug\HashTask.pdb
+D:\c#\HashTask\HashTask\obj\Debug\HashTask.exe
+D:\c#\HashTask\HashTask\obj\Debug\HashTask.pdb
