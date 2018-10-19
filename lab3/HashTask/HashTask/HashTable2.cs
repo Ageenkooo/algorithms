@@ -59,6 +59,10 @@ namespace HashTask
                     }
                 }
             }
+            catch (ArgumentNullException e)
+            {
+                Console.WriteLine($"Exception occured: {e.Message}");
+            }
         }
 
         public void Delete(int key)
@@ -70,13 +74,17 @@ namespace HashTask
                 {
                     table[h] = null;
                 }
-                for (int i = h + 1; i != h; i = (i + 1) % table.Length)
+                for (int i = h + 1; i != h; h=(h + i * i) % N)
                 {
                     if (table[i].Value == key && table[i] != null)
                     {
                         table[i] = null;
                     }
                 }
+            }
+            catch (ArgumentNullException e)
+            {
+                Console.WriteLine($"Exception: {e.Message}");
             }
         }
 
