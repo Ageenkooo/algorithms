@@ -59,10 +59,6 @@ namespace HashTask
                     }
                 }
             }
-            catch (ArgumentNullException e)
-            {
-                Console.WriteLine($"Exception occured: {e.Message}");
-            }
         }
 
         public void Delete(int key)
@@ -81,10 +77,6 @@ namespace HashTask
                         table[i] = null;
                     }
                 }
-            }
-            catch (ArgumentNullException e)
-            {
-                Console.WriteLine($"Exception: {e.Message}");
             }
         }
 
