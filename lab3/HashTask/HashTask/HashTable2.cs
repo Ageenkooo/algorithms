@@ -10,8 +10,6 @@ namespace HashTask
     {
         public int N = 1024;
         private Item[] table;
-        private double Prime = 3571;
-        public double A = 0.6180339887;
 
         public HashTable2()
         {
