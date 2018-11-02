@@ -308,6 +308,7 @@ namespace Graphs1
             }
             listBoxMatrix.Items.Add(isEuler.ToString());
             string[] used = new string[V.Count];
+            string[] doli = new string[V.Count];
             string symbol = "area";
             int m = 0;
 
@@ -330,6 +331,8 @@ namespace Graphs1
                  e = new int[V.Count, V.Count];
                  euler(0, AMatrix);
              }
+            listBoxMatrix.Items.Add("dvudolnost");
+            bfs2(0, AMatrix, doli);
         }
 
         private void euler(int i, int[,] AMatrix)
@@ -405,7 +408,50 @@ namespace Graphs1
                 }
             }
         }
-        
+
+        private void bfs2(int v, int[,] AMatrix, string[] doli)
+        {
+            doli[v] = "a";
+            Queue<int> q = new Queue<int>();
+            q.Enqueue(v);
+            bool dvud = true;
+            while (q.Count != 0)
+            {
+                v = q.Dequeue();
+                for (int i = 0; i < V.Count; i++)
+                {
+                    if (AMatrix[i, v] != 0 && String.IsNullOrEmpty(doli[i]))
+                    {
+                        if (doli[v].Equals("a"))
+                        {
+                            doli[i] = "b";
+                        }
+                        else if (doli[v].Equals("b"))
+                        {
+                            doli[i] = "a";
+                        }
+                        q.Enqueue(i);
+                    }
+                    else if (AMatrix[i, v] != 0 && !String.IsNullOrEmpty(doli[i]))
+                    {
+                        if (doli[v].Equals(doli[i]))
+                        {
+                            dvud = false;
+                            listBoxMatrix.Items.Add("no dolnii");
+                            break;
+                        }
+                    }
+                }
+            }
+            if (dvud)
+            {
+                for (int i = 0; i < doli.Length; i++)
+                {
+                    listBoxMatrix.Items.Add((i + 1) + doli[i]);
+                }
+            }
+        }
+
         private void saveButton_Click(object sender, EventArgs e)
         {
             if (sheet.Image != null)
