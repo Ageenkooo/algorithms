@@ -1,0 +1,10 @@
+C:\Users\Irina\Desktop\lab5\graphs-second-task\Graphs\bin\Debug\SystAnalys_lr1.exe.config
+C:\Users\Irina\Desktop\lab5\graphs-second-task\Graphs\bin\Debug\SystAnalys_lr1.exe
+C:\Users\Irina\Desktop\lab5\graphs-second-task\Graphs\bin\Debug\SystAnalys_lr1.pdb
+C:\Users\Irina\Desktop\lab5\graphs-second-task\Graphs\obj\Debug\Graphs.csprojAssemblyReference.cache
+C:\Users\Irina\Desktop\lab5\graphs-second-task\Graphs\obj\Debug\Graphs.Form1.resources
+C:\Users\Irina\Desktop\lab5\graphs-second-task\Graphs\obj\Debug\SystAnalys_lr1.Properties.Resources.resources
+C:\Users\Irina\Desktop\lab5\graphs-second-task\Graphs\obj\Debug\Graphs.csproj.GenerateResource.cache
+C:\Users\Irina\Desktop\lab5\graphs-second-task\Graphs\obj\Debug\Graphs.csproj.CoreCompileInputs.cache
+C:\Users\Irina\Desktop\lab5\graphs-second-task\Graphs\obj\Debug\SystAnalys_lr1.exe
+C:\Users\Irina\Desktop\lab5\graphs-second-task\Graphs\obj\Debug\SystAnalys_lr1.pdb
