@@ -1,0 +1,10 @@
+D:\graphs-second-task — копия\Graphs\bin\Debug\SystAnalys_lr1.exe.config
+D:\graphs-second-task — копия\Graphs\bin\Debug\SystAnalys_lr1.exe
+D:\graphs-second-task — копия\Graphs\bin\Debug\SystAnalys_lr1.pdb
+D:\graphs-second-task — копия\Graphs\obj\Debug\Graphs.aboutForm.resources
+D:\graphs-second-task — копия\Graphs\obj\Debug\Graphs.Form1.resources
+D:\graphs-second-task — копия\Graphs\obj\Debug\SystAnalys_lr1.Properties.Resources.resources
+D:\graphs-second-task — копия\Graphs\obj\Debug\Graphs.csproj.GenerateResource.cache
+D:\graphs-second-task — копия\Graphs\obj\Debug\Graphs.csproj.CoreCompileInputs.cache
+D:\graphs-second-task — копия\Graphs\obj\Debug\SystAnalys_lr1.exe
+D:\graphs-second-task — копия\Graphs\obj\Debug\SystAnalys_lr1.pdb
