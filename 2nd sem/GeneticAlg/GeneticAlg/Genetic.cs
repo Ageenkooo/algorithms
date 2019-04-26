@@ -11,9 +11,9 @@ namespace GeneticAlg
         private Individ bestFromAll;
         private Individ bestFromThisPopulation;
         private int[] koefs;
-        private int numberOfPopulation = 50;
+        private int numberOfPopulation = 10;
         private int repeats = 0;
-        private int maxRepeat = 50;
+        private int maxRepeat = 100;
         private double mutationVar = 0.2;
         private double nuclearBlastMutation = 0.6;
 
@@ -52,7 +52,7 @@ namespace GeneticAlg
                     mutationVar = nuclearBlastMutation;
                 }
 
-                population = new List<Individ>(ChangeGen(population));
+                population = new List<Individ>(RenewGeneration(population));
                 bestFromThisPopulation = population[0];
 
                 if (bestFromThisPopulation.Diff < bestFromAll.Diff)
@@ -65,7 +65,7 @@ namespace GeneticAlg
                     repeats++;
                 }
                 Console.WriteLine("Best from All: " + bestFromAll.Show());
-                Console.WriteLine("Best from  gen " + (i + 1) + ": " + bestFromThisPopulation.Show());
+                Console.WriteLine("Best from gen: " + (i + 1) + ": " + bestFromThisPopulation.Show());
                 if (isNuclearBlast)
                 {
                     mutationVar = notNuclear;
@@ -75,7 +75,7 @@ namespace GeneticAlg
             return bestFromAll;
         }
 
-        private List<Individ> ChangeGen(List<Individ> population)
+        private List<Individ> RenewGeneration(List<Individ> population)
         {
             List<Individ> newGen = new List<Individ>();
             List<Individ> popForSelect = new List<Individ>();
