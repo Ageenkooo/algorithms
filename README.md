@@ -1,4 +1,4 @@
-# Algorithms
+# Algorithms (Just for university)
 
   *Описание заданий и самих программ*
   
